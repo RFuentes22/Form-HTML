@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1> 
+    
+    <form action="index.html" method="GET">
+        <fieldset>
+            <legend><strong>Category</strong></legend>
+
+        
+        <div>
+        <fieldset>
+            <legend>Personal</legend>
+
+            <label for="name">name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="datebirth">Date of birth</label>
+            <input type="date" name="date" id="date" required>
+
+            <label for="favanimal">Favorite Animal</label>
+            <input type="text" name="favanimal" id="favanimal">
+          
+
+        </fieldset>
+        </div>
+        <div>
+        <fieldset>
+            <legend>Account</legend>
+
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Write your password" required pattern=".{8,}"
+            title="8 or more characters">
+            <label for="vpassword">Verify Password</label>
+            <input type="password" name="vpassword" id="vpassword" placeholder="Repeat password" required pattern=".{8,}"
+            title="8 or more characters">>
+        
+
+        </fieldset>
+        </div>
+    <div>
+        <fieldset>
+            <legend>Contact</legend>
+
+            <label for="address">address</label>
+            <input type="text" name="address" id="address">
+
+            <label for="City">City</label>
+            <input type="text" name="City" id="City" required>
+
+            <label for="Country">Country</label>
+            <input type="text" name="Country" id="Country" required>
+
+            <label for="pnumber">Phone number</label>
+            <input type="tel" name="pnumber" id="pnumber" required pattern=".{8}">
+            
+
+        </fieldset>
+    </div>
+    <div>
+        <input type="submit" value="Sign up">
+    </div>
+        </fieldset>
+    </form>
+
+
+
+
+
+</body>
+</html>
